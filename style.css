@@ -1,11 +1,18 @@
 /*
 Theme Name: SayoOnishi 
 Author: Hiroshi Isobe
+
+temporary color palette
+#633475
+#D6AD56
+#F5DCFF
+#C2FFE4
+#91B3A3
+
 */
 html,
 body {
   margin: 0;
-  background-color: #f5dcff;
 }
 
 body.home div.title-wrapper {
@@ -21,6 +28,7 @@ body.home div.title-wrapper h1 {
   transform: rotate(-13deg) translateX(-20px);
   color: white;
   background-color: #634475;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 
 body.home div.title-wrapper h1 span.main-title {
@@ -35,7 +43,7 @@ body.home div.title-wrapper h1 span.sub-title {
 
 body.home div.main-pic-wrapper {
   width: 100%;
-  margin-top: -40px;
+  margin-top: -35px;
 }
 
 body.home div.main-pic-wrapper img.main-image {
