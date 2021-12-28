@@ -1,8 +1,11 @@
 {
     "version": 3,
-    "mappings": "AAAA;;;EAGE",
+    "mappings": "AAAA;;;EAGE;AAEF,AAAA,IAAI;AACJ,IAAI,CAAC;EACH,MAAM,EAAE,CAAC;CACV;;ACRD,AACE,IADE,AAAA,KAAK,CACP,GAAG,AAAA,iBAAiB,CAAC;EACnB,KAAK,EAAE,IAAI;CAKZ;;AAPH,AAGI,IAHA,AAAA,KAAK,CACP,GAAG,AAAA,iBAAiB,CAElB,GAAG,AAAA,WAAW,CAAC;EACb,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;CACb",
     "sources": [
-        "sass/style.scss"
+        "sass/style.scss",
+        "sass/modules/_mobile.scss",
+        "sass/modules/_tablet.scss",
+        "sass/modules/_desktop.scss"
     ],
     "names": [],
     "file": "style.css"
