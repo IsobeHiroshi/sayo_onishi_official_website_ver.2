@@ -1,9 +1,32 @@
 body.home {
+  div.title-wrapper {
+    overflow: hidden;
+    padding-bottom: 40px;
+    h1 {
+      font-family: "Poiret One";
+      padding: 10px 0px 10px 60px;
+      width: 105%;
+      margin-top: 20px;
+      transform: rotate(-13deg) translateX(-20px);
+      color: white;
+      background-color: #634475;
+      span.main-title {
+        display: inline-block;
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+      }
+      span.sub-title {
+        font-size: 1.4rem;
+      }
+    }
+  }
   div.main-pic-wrapper {
     width: 100%;
+    margin-top: -40px;
     img.main-image {
       width: 100%;
       height: auto;
+      clip-path: polygon(0% 15%, 100% 0%, 100% 70%, 0% 85%);
     }
   }
 }

@@ -5,14 +5,42 @@ Author: Hiroshi Isobe
 html,
 body {
   margin: 0;
+  background-color: #f5dcff;
+}
+
+body.home div.title-wrapper {
+  overflow: hidden;
+  padding-bottom: 40px;
+}
+
+body.home div.title-wrapper h1 {
+  font-family: "Poiret One";
+  padding: 10px 0px 10px 60px;
+  width: 105%;
+  margin-top: 20px;
+  transform: rotate(-13deg) translateX(-20px);
+  color: white;
+  background-color: #634475;
+}
+
+body.home div.title-wrapper h1 span.main-title {
+  display: inline-block;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+body.home div.title-wrapper h1 span.sub-title {
+  font-size: 1.4rem;
 }
 
 body.home div.main-pic-wrapper {
   width: 100%;
+  margin-top: -40px;
 }
 
 body.home div.main-pic-wrapper img.main-image {
   width: 100%;
   height: auto;
+  clip-path: polygon(0% 15%, 100% 0%, 100% 70%, 0% 85%);
 }
 /*# sourceMappingURL=style.css.map */
