@@ -5,6 +5,7 @@ Author: Hiroshi Isobe
 html,
 body {
   margin: 0;
+  height: 100vh;
 }
 
 /* Variable for fonts */
@@ -12,7 +13,7 @@ body {
 /* Variables for Colors */
 body.home div.title-wrapper {
   overflow: hidden;
-  padding-bottom: 40px;
+  padding-bottom: 50px;
 }
 
 body.home div.title-wrapper h1 {
@@ -50,7 +51,7 @@ body.home div.main-pic-wrapper img.main-image {
 body.home nav.menu-container {
   position: relative;
   height: 200px;
-  margin-top: -110px;
+  transform: translateY(-45%);
 }
 
 body.home nav.menu-container ul {
@@ -59,7 +60,7 @@ body.home nav.menu-container ul {
   padding: 0;
   position: absolute;
   right: 0px;
-  width: 200px;
+  width: 50%;
 }
 
 body.home nav.menu-container ul li {
@@ -78,5 +79,36 @@ body.home nav.menu-container ul li a {
   font-weight: bold;
   font-size: 1.7rem;
   color: black;
+}
+
+@media (min-width: 768px) {
+  body.home div.title-wrapper {
+    padding-bottom: 120px;
+  }
+  body.home div.title-wrapper h1 {
+    padding: 15px 0px 15px 130px;
+    transform: rotate(-13deg) translateX(-40px);
+  }
+  body.home div.title-wrapper h1 span.main-title {
+    font-size: 3rem;
+  }
+  body.home div.main-pic-wrapper {
+    margin-top: -150px;
+    height: 1100px;
+    overflow: hidden;
+  }
+  body.home div.main-pic-wrapper img.main-image {
+    clip-path: polygon(0% 15%, 100% 0%, 100% 60%, 0% 75%);
+  }
+  body.home nav.menu-container {
+    transform: translateY(-140%);
+  }
+  body.home nav.menu-container ul {
+    width: 40%;
+  }
+  body.home nav.menu-container ul li a {
+    padding-left: 30px;
+    font-size: 2.5rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

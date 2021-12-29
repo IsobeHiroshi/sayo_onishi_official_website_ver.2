@@ -1,0 +1,32 @@
+body.home {
+  div.title-wrapper {
+    padding-bottom: 120px;
+    h1 {
+      padding: 15px 0px 15px 130px;
+      transform: rotate(-13deg) translateX(-40px);
+      span.main-title {
+        font-size: 3rem;
+      }
+    }
+  }
+  div.main-pic-wrapper {
+    margin-top: -150px;
+    height: 1100px;
+    overflow: hidden;
+    img.main-image {
+      clip-path: polygon(0% 15%, 100% 0%, 100% 60%, 0% 75%);
+    }
+  }
+  nav.menu-container {
+    transform: translateY(-140%);
+    ul {
+      width: 40%;
+      li {
+        a {
+          padding-left: 30px;
+          font-size: 2.5rem;
+        }
+      }
+    }
+  }
+}
