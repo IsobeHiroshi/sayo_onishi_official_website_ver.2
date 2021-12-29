@@ -51,4 +51,18 @@ body.home div.main-pic-wrapper img.main-image {
   height: auto;
   clip-path: polygon(0% 15%, 100% 0%, 100% 70%, 0% 85%);
 }
+
+body.home nav.menu-container ul {
+  list-style: none;
+  margin-top: -60px;
+}
+
+body.home nav.menu-container ul li {
+  text-align: right;
+}
+
+body.home nav.menu-container ul li a {
+  text-decoration: none;
+  color: black;
+}
 /*# sourceMappingURL=style.css.map */

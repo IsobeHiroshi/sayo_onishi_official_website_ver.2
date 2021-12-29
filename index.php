@@ -8,4 +8,14 @@
     <img class="main-image" src="<?php bloginfo('stylesheet_directory'); ?>/images/top.jpg" alt="main image">
 </div>
 
+<?php
+      wp_nav_menu( array(
+          'theme_location'    =>  'menu-main',
+          'container'         =>  'nav',
+          'container_class'   =>  'menu-container',
+          'menu_class'        =>  'main-menu'
+      ) );
+    ?>
+
+
 <?php get_footer(); ?>
