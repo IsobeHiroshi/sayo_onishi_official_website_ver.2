@@ -3,13 +3,13 @@ body.home {
     overflow: hidden;
     padding-bottom: 40px;
     h1 {
-      font-family: "Poiret One";
+      font-family: $poiret;
       padding: 10px 0px 10px 60px;
       width: 105%;
       margin-top: 20px;
       transform: rotate(-13deg) translateX(-20px);
       color: white;
-      background-color: #634475;
+      background-color: $dark-purple;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
       span.main-title {
         display: inline-block;
@@ -31,13 +31,29 @@ body.home {
     }
   }
   nav.menu-container {
+    position: relative;
+    height: 200px;
+    margin-top: -110px;
     ul {
       list-style: none;
-      margin-top: -60px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      right: 0px;
+      width: 200px;
       li {
-        text-align: right;
+        position: relative;
+        padding-left: 10px;
+        margin-bottom: 20px;
+        border-bottom: 3px solid $dark-purple;
         a {
+          padding-left: 10px;
+          display: inline-block;
+          margin-bottom: 5px;
           text-decoration: none;
+          font-family: $comfortaa;
+          font-weight: bold;
+          font-size: 1.7rem;
           color: black;
         }
       }

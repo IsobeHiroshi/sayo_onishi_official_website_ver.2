@@ -1,20 +1,15 @@
 /*
 Theme Name: SayoOnishi 
 Author: Hiroshi Isobe
-
-temporary color palette
-#633475
-#D6AD56
-#F5DCFF
-#C2FFE4
-#91B3A3
-
 */
 html,
 body {
   margin: 0;
 }
 
+/* Variable for fonts */
+/* <- This has normal(400) and bold(700) weight */
+/* Variables for Colors */
 body.home div.title-wrapper {
   overflow: hidden;
   padding-bottom: 40px;
@@ -27,7 +22,7 @@ body.home div.title-wrapper h1 {
   margin-top: 20px;
   transform: rotate(-13deg) translateX(-20px);
   color: white;
-  background-color: #634475;
+  background-color: #633475;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 
@@ -52,17 +47,36 @@ body.home div.main-pic-wrapper img.main-image {
   clip-path: polygon(0% 15%, 100% 0%, 100% 70%, 0% 85%);
 }
 
+body.home nav.menu-container {
+  position: relative;
+  height: 200px;
+  margin-top: -110px;
+}
+
 body.home nav.menu-container ul {
   list-style: none;
-  margin-top: -60px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  right: 0px;
+  width: 200px;
 }
 
 body.home nav.menu-container ul li {
-  text-align: right;
+  position: relative;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  border-bottom: 3px solid #633475;
 }
 
 body.home nav.menu-container ul li a {
+  padding-left: 10px;
+  display: inline-block;
+  margin-bottom: 5px;
   text-decoration: none;
+  font-family: "Comfortaa";
+  font-weight: bold;
+  font-size: 1.7rem;
   color: black;
 }
 /*# sourceMappingURL=style.css.map */
