@@ -5,6 +5,7 @@ Author: Hiroshi Isobe
 html,
 body {
   margin: 0;
+  padding: 0;
   height: 100vh;
 }
 
@@ -18,7 +19,7 @@ body.home div.title-wrapper {
 
 body.home div.title-wrapper h1 {
   font-family: "Poiret One";
-  padding: 10px 0px 10px 60px;
+  padding: 10px 0px 10px 15%;
   width: 105%;
   margin-top: 20px;
   transform: rotate(-13deg) translateX(-20px);
@@ -37,24 +38,27 @@ body.home div.title-wrapper h1 span.sub-title {
   font-size: 1.4rem;
 }
 
-body.home div.main-pic-wrapper {
-  width: 100%;
-  margin-top: -35px;
+body.home div.main-pic-menu-wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
-body.home div.main-pic-wrapper img.main-image {
+body.home div.main-pic-menu-wrapper div.main-pic-wrapper {
+  width: 100%;
+  margin-top: -15%;
+}
+
+body.home div.main-pic-menu-wrapper div.main-pic-wrapper img.main-image {
   width: 100%;
   height: auto;
   clip-path: polygon(0% 15%, 100% 0%, 100% 70%, 0% 85%);
 }
 
-body.home nav.menu-container {
-  position: relative;
-  height: 200px;
-  transform: translateY(-45%);
+body.home div.main-pic-menu-wrapper nav.menu-container {
+  margin-top: -25%;
 }
 
-body.home nav.menu-container ul {
+body.home div.main-pic-menu-wrapper nav.menu-container ul {
   list-style: none;
   overflow: hidden;
   padding: 0;
@@ -63,14 +67,14 @@ body.home nav.menu-container ul {
   width: 50%;
 }
 
-body.home nav.menu-container ul li {
+body.home div.main-pic-menu-wrapper nav.menu-container ul li {
   position: relative;
   padding-left: 10px;
   margin-bottom: 20px;
   border-bottom: 3px solid #633475;
 }
 
-body.home nav.menu-container ul li a {
+body.home div.main-pic-menu-wrapper nav.menu-container ul li a {
   padding-left: 10px;
   display: inline-block;
   margin-bottom: 5px;
@@ -83,32 +87,39 @@ body.home nav.menu-container ul li a {
 
 @media (min-width: 768px) {
   body.home div.title-wrapper {
+    margin-top: -5%;
     padding-bottom: 120px;
   }
   body.home div.title-wrapper h1 {
-    padding: 15px 0px 15px 130px;
+    padding: 15px 0px 15px 15%;
     transform: rotate(-13deg) translateX(-40px);
   }
   body.home div.title-wrapper h1 span.main-title {
     font-size: 3rem;
   }
-  body.home div.main-pic-wrapper {
-    margin-top: -150px;
+  body.home div.title-wrapper h1 span.sub-title {
+    font-size: 1.6rem;
+  }
+  body.home div.main-pic-menu-wrapper div.main-pic-wrapper {
+    margin-top: -20%;
     height: 1100px;
     overflow: hidden;
   }
-  body.home div.main-pic-wrapper img.main-image {
+  body.home div.main-pic-menu-wrapper div.main-pic-wrapper img.main-image {
     clip-path: polygon(0% 15%, 100% 0%, 100% 60%, 0% 75%);
   }
-  body.home nav.menu-container {
-    transform: translateY(-140%);
+  body.home div.main-pic-menu-wrapper nav.menu-container {
+    margin-top: -37%;
   }
-  body.home nav.menu-container ul {
+  body.home div.main-pic-menu-wrapper nav.menu-container ul {
     width: 40%;
   }
-  body.home nav.menu-container ul li a {
+  body.home div.main-pic-menu-wrapper nav.menu-container ul li {
+    margin-bottom: 25px;
+  }
+  body.home div.main-pic-menu-wrapper nav.menu-container ul li a {
     padding-left: 30px;
-    font-size: 2.5rem;
+    font-size: 2.4rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
